@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/draftback.jpeg);
+  background-size: cover;
+  display: block;
+  position: fixed;
+}
+
+:root{
+  --select: gray;
+}
+.abbadon{
+  z-index: 101;
+  position: absolute;
+  width: 3em;
+  top: 2.7em;
+  left: 1.4em;
+}
+.abbadon:target{
+  --select: white;
+}
+.btnforpopup1{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top:3em;
+  background-color: var(--select);
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btnforpopup2{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 12em;
+  background-color: gray;
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btnforpopup3{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 21em;
+  background-color: gray;
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btnforpopup4{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 30em;
+  background-color: gray;
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btnforpopup5{
+  position: absolute;
+  z-index: 2;
+  left: 70em;
+  top: 39em;
+  background-color: gray;
+  width: 15em;
+  height: 7em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.popup{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.popup:target{
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+.popup__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.popup__content{
+  background-color: rgb(61,62,98);
+  color: rgb(156,145,255);
+  background-image: url(../imgforpick/dotaheroes.png);
+  width: 1350px;
+  height: 670px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: translate(0px,-100%)
+}
+.popup__title1{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+}
+.popup__title2{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 200px;
+}
+.popup__title3{
+  font-size: 20px;
+  margin: 0px 0px 1em 0px;
+  position: absolute;
+  top: 400px;
+}
+.popup__close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
